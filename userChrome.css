@@ -103,7 +103,7 @@ toolbar#nav-bar::after{ width: calc(var(--uc-window-control-width) + var(--uc-wi
     margin-left: 30px;
   }
 
-  #main-window[inFullscreen][inDOMFullscreen] #appcontent {
+  #main-window[inFullscreen][inDOMFullscreen] ~ #appcontent {
     margin-left: 0px;
     width: 0px;
   }
@@ -111,6 +111,8 @@ toolbar#nav-bar::after{ width: calc(var(--uc-window-control-width) + var(--uc-wi
   #main-window[inFullscreen] #sidebar-box {
     height: 100vh;
   }
+
+
 
   /* Place sidebar header at the bottom */
   /*
