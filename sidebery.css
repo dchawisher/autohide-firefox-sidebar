@@ -1,0 +1,32 @@
+/*Necessary to make tabs indent on hover*/
+
+.Sidebar:hover {
+  --tabs-indent: 1.5em;
+}
+
+/*Unrelated bookmarks panel changes I made.*/
+
+.BEditor .editor-panel {
+    margin: auto;
+    position: absolute;
+    top: 1; left: 0; bottom: 50%; right: 0;
+    max-height: 300px;
+    width: 350px;
+    padding: 0 0 8px;
+    background-color: var(--bg);
+    background-image: var(--bg-img);
+    background-size: var(--bg-size);
+    transform: translateZ(0);
+    box-shadow: 0 -1px 12px 0 rgba(0,0,0,0.337),0 -1px 0 0 rgba(0,0,0,0.071);
+}
+
+
+.exp svg {
+display: none !important
+}
+
+.Folder[data-expanded][data-parent] > .body > .title {
+ color:var(--bookmarks-folder-expanded-fg);
+ mask:linear-gradient(-90deg,transparent 12px,#000 24px,#000);
+ transform:translateX(0px)
+}
